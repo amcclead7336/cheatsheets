@@ -20,9 +20,6 @@ EOF
 ```
 
 ## Sessions (ses)
-### Summary
-Sessions contain windows
-
 ### Create Session
 ```bash
 tmux new
@@ -52,13 +49,11 @@ tmux a (-t sesname)
 tmux kill-ses -t sessionname
 tmux kill-ses -a 
 
-## kill all sessions except sesion name
+## kill all ses except sesionname
 tmux kill-ses -a -t sessionname
 ```
 
 ## Windows
-### Summary
-Windows exist in Ses
 ### Create window
 ```
 ^b c
@@ -73,7 +68,37 @@ Windows exist in Ses
 ^b p
 ^b n
 
-# Change window by num
+# Change by num
 ^b [0-9]
 ```
 
+## Panes
+### Create panes
+```
+## vert split
+^b %
+## horizontal split
+^b "
+```
+
+### Working with Panes
+```
+## Close pane
+^b x
+
+## Zoom
+^b z
+
+## Convert to window
+^b !
+
+## Move right and left
+^b {
+^b }
+
+## Show nums and move
+^b q ([0-9])
+
+## Toggle Layout
+^b [space]
+```
