@@ -18,6 +18,9 @@ set -g @plugin 'tmux-plugins/tmux-sensible'
 run '~/.tmux/plugins/tpm/tpm'
 EOF
 ```
+### Other
+Enter command mode
+^b :
 
 ## Sessions (ses)
 ### Create Session
@@ -102,3 +105,23 @@ tmux kill-ses -a -t sessionname
 ## Toggle Layout
 ^b [space]
 ```
+
+## Copy Mode (cm)
+```
+## Enter cm
+^b [
+^b PgUp
+
+## Search for word (forward and backward)
+/
+?
+## Next word occurance and Prev
+n
+N
+
+## Select
+Space (start)
+Clear (ESC)
+Copy  (Enter)
+```
+
