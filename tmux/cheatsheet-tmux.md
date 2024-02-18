@@ -19,7 +19,7 @@ run '~/.tmux/plugins/tpm/tpm'
 EOF
 ```
 
-## Sessions
+## Sessions (ses)
 ### Summary
 Sessions contain windows
 
@@ -33,22 +33,47 @@ tmux new -s sessionname
 ```
 ## List ses
 tmux ls
-Ctrl+b w 
+^b w ## Includes windows
+
 ## Attach to ses
 tmux a (-t sesname)
-## Detach from ses
-Ctrl+b d
-## Move to prev and next ses
-Ctrl+b (
-Ctrl+b )
-## Rename ses
-Ctrl+b $
-```
 
-### Kill Session
-```bash
+## Detach from ses
+^b d
+
+## Move to prev and next ses
+^b (
+^b )
+
+## Rename ses
+^b $
+
+## kill Session
 tmux kill-ses -t sessionname
 tmux kill-ses -a 
+
 ## kill all sessions except sesion name
 tmux kill-ses -a -t sessionname
 ```
+
+## Windows
+### Summary
+Windows exist in Ses
+### Create window
+```
+^b c
+```
+
+### Working with windows
+```
+## Close window
+^b &
+
+## Change window
+^b p
+^b n
+
+# Change window by num
+^b [0-9]
+```
+
