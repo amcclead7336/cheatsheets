@@ -1,4 +1,20 @@
 # Tmux Cheatsheet
+
+- [Tmux Cheatsheet](#tmux-cheatsheet)
+  - [Setup](#setup)
+    - [Install package man](#install-package-man)
+    - [Other](#other)
+  - [Sessions (ses)](#sessions-ses)
+    - [Create Session](#create-session)
+    - [Working with Sessions](#working-with-sessions)
+  - [Windows](#windows)
+    - [Create window](#create-window)
+    - [Working with windows](#working-with-windows)
+  - [Panes](#panes)
+    - [Create panes](#create-panes)
+    - [Working with Panes](#working-with-panes)
+  - [Copy Mode (cm)](#copy-mode-cm)
+
 ## Setup
 ### Install package man
 ```bash
